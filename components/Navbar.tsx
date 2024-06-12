@@ -5,21 +5,23 @@ import Link from "next/link";
 import { signOut } from "next-auth/react";
 import { mainLinks } from "@/constants";
 import { userLinks } from "@/constants";
+import { User } from "@prisma/client";
+import { FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
+import { TbBracketsAngle } from "react-icons/tb";
 //icons
 import {
 	AiOutlineUser,
 	AiOutlineShoppingCart,
 	AiOutlineHeart,
 } from "react-icons/ai";
-import { FiMenu } from "react-icons/fi";
-import { MdClose } from "react-icons/md";
-import { TbBracketsAngle } from "react-icons/tb";
 
-const Navbar = () => {
+interface NavbarProps {
+	user: User;
+}
+const Navbar: React.FC<NavbarProps> = ({ user }) => {
 	const [openMobileMenu, setOpenMobileMenu] = useState(false);
 	const [openUserMenu, setOpenUserMenu] = useState(false);
-
-	const [user, setUser] = useState(true);
 
 	const mobileMenuHandler = () => {
 		setOpenMobileMenu(!openMobileMenu);
