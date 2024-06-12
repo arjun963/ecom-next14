@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+technologies used: next14, nextauth, prisma, tailwind, typescript, stripe, mongodb,zustand
+
+packages installed-
+
+1. npm install next-auth
+2. npm install @prisma/client @auth/prisma-adapter
+3. npm install prisma --save-dev
+4. npx prisma init --datasource-provider mongoDB
+5. npx prisma generate
+6. npm install --save-dev @types/bcrypt
+7. npm i react-icons --save
+8. npm i bcrypt
+9. npm i clsx
+10. npm install react-hot-toast
+11. npm install swiper
