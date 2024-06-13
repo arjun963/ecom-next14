@@ -27,7 +27,7 @@ const ProductsCard = ({ product }: { product: ProductType }) => {
 				</div>
 			</div>
 			<h3 className="font-bold tracking-wide">{product.name}</h3>
-			<span>product.unit_amount</span>
+			<span>{product.unit_amount}</span>
 			<select
 				value={selectedSize}
 				onChange={(e) => setSelectedSize(e.target.value)}
