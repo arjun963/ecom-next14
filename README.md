@@ -50,3 +50,6 @@ packages installed-
 9. npm i clsx
 10. npm install react-hot-toast
 11. npm install swiper
+12. npm install --save @stripe/react-stripe-js @stripe/stripe-js
+13. npm i stripe
+14.

@@ -32,6 +32,12 @@ const Hero = () => {
 							className="h-full w-full object-cover"
 						/>
 					</SwiperSlide>
+					<SwiperSlide>
+						<img
+							src="/slider-image-3.png"
+							className="h-full w-full object-cover"
+						/>
+					</SwiperSlide>
 				</Swiper>
 			</div>
 		</section>
