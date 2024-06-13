@@ -53,3 +53,4 @@ packages installed-
 12. npm install --save @stripe/react-stripe-js @stripe/stripe-js
 13. npm i stripe
 14. npm i zustand
+15. npm install @stripe/stripe-js use-shopping-cart
