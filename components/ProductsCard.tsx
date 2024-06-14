@@ -5,6 +5,7 @@ import { FaHeartCirclePlus, FaEye } from "react-icons/fa6";
 import toast from "react-hot-toast";
 import { ProductType } from "@/types/ProductTypes";
 import AddToCart from "@/app/(shoppingcart)/components/ui/AddToCart";
+import formatPrice from "@/utils/formatPrice";
 const ProductsCard = ({ product }: { product: ProductType }) => {
 	const [selectedSize, setSelectedSize] = useState("");
 
@@ -34,7 +35,7 @@ const ProductsCard = ({ product }: { product: ProductType }) => {
 				</div>
 			</div>
 			<h3 className="font-bold tracking-wide">{product.name}</h3>
-			<span>{product.unit_amount}</span>
+			<span>{formatPrice(product.unit_amount)}</span>
 			<select
 				value={selectedSize}
 				onChange={(e) => setSelectedSize(e.target.value)}
