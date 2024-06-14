@@ -9,6 +9,8 @@ import { User } from "@prisma/client";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { TbBracketsAngle } from "react-icons/tb";
+import CartIcon from "@/app/(shoppingcart)/components/ui/CartIcon";
+
 //icons
 import {
 	AiOutlineUser,
@@ -50,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ user }) => {
 				</ul>
 
 				<div className="flex gap-5 text-xl [&>*]:cursor-pointer">
-					<AiOutlineShoppingCart />
+					<CartIcon />
 					<AiOutlineHeart />
 					<div className="max-md:hidden" onClick={userMenuHandler}>
 						<AiOutlineUser />

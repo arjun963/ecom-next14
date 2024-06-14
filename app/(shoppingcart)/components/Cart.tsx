@@ -1,5 +1,7 @@
+import cart from "../cart/page";
+
 function Cart() {
-	return <div></div>;
+	return <div>hello</div>;
 }
 
 export default Cart;
