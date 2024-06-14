@@ -7,7 +7,7 @@ const Banner = () => {
 				src={"/banner-image.jpg"}
 				width={1400}
 				height={500}
-				alt="shirt banner"
+				alt="offer banner"
 			/>
 		</section>
 	);
