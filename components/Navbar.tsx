@@ -17,6 +17,7 @@ import {
 	AiOutlineShoppingCart,
 	AiOutlineHeart,
 } from "react-icons/ai";
+import WishlistIcon from "@/app/(wishlist)/components/WishlistIcon";
 
 interface NavbarProps {
 	user: User;
@@ -53,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ user }) => {
 
 				<div className="flex gap-5 text-xl [&>*]:cursor-pointer">
 					<CartIcon />
-					<AiOutlineHeart />
+					<WishlistIcon />
 					<div className="max-md:hidden" onClick={userMenuHandler}>
 						<AiOutlineUser />
 					</div>

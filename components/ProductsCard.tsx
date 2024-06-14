@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 import { ProductType } from "@/types/ProductTypes";
 import AddToCart from "@/app/(shoppingcart)/components/ui/AddToCart";
 import formatPrice from "@/utils/formatPrice";
+import AddToWishlistButton from "@/app/(wishlist)/components/AddToWishlistButton";
 const ProductsCard = ({ product }: { product: ProductType }) => {
 	const [selectedSize, setSelectedSize] = useState("");
 
@@ -27,7 +28,13 @@ const ProductsCard = ({ product }: { product: ProductType }) => {
 				/>
 				<div className="hidden absolute top-5 items-center justify-center group-hover:flex flex-col gap-3">
 					<button className="mx-2 bg-gray-900 border text-white p-2 rounded-md hover:bg-gray-900/75">
-						<FaHeartCirclePlus />
+						<AddToWishlistButton
+							name={product.name}
+							image={product.image}
+							id={product.id}
+							unit_amount={product.unit_amount}
+							quantity={product.quantity}
+						/>
 					</button>
 					<button className="mx-2 bg-gray-900 border text-white p-2 rounded-md hover:bg-gray-900/75">
 						<FaEye />
